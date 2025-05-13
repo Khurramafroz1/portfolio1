@@ -6,7 +6,7 @@ draft: false
 tags: ["AI", "LLM", "Interpretability", "Anthropic", "Claude", "Machine Learning", "Explainable AI"]
 weight: 101
 cover:
-    image: "/blog/aws-dvaa-certification/MIT_Explanation-Summary-01-PRESS_0.jpg"
+    image: "/blog/aws-dva-certification/MIT_Explanation-Summary-01-PRESS_0.jpg"
 ---
 
 For as long as artificial intelligence has been in development, there’s been a persistent mystery at the heart of it — a “black box” of decision-making we couldn’t fully explain. Even seasoned developers and researchers could only analyze the outputs of models like GPT or Claude, make educated guesses based on attention maps or embeddings, and hope to understand what was going on inside. Much of the actual process behind an AI’s decisions remained elusive.
