@@ -1,0 +1,101 @@
+baseURL: "https://arkalim.netlify.app"
+languageCode: en-us
+title: Khurram
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true@category:debuggers YAML
+    title: "Khurram Afroz"
+    subtitle: Hi 👋 Khurram here, a tech enthusiast who loves solving complex problems. As a PhD research scholar at IIT Delhi I'm building robust systems to transform the legal experience of Portable USG systems using Deep learning and computer vision. My work is closely supervised by Monika Aggarwal. By evening, you can find me pushing the limits of my strength at the gym. Let's connect and create something awesome together!
+
+ 
+    imageUrl: "/home/WhatsApp Image 2025-04-23 at 18.10.23.jpe"
+    imageWidth: 220
+    imageHeight: 220
+    # buttons:
+    #   - name: Resume
+    #     url: ""
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "samarafroz66@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFx8TDvcKB7RgAAAZa0oKyY5I2TuK1TcNCLTCUs7l1KlNNHdhM3TRIXhZ5lThmsv5uhATCnnB1yJkykq1jlBwXrBdZZVv96cEJ5fgyyfWVz7xW0WWDNfepkwNMfcF2ToeFMoMQ=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkhurram-afroz-b1b230195%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
+    - name: "Researchgate"
+      url: "https://www.researchgate.net/profile/Khurram-Afroz"
+    - name: "Medium"
+      url: "https://medium.com/@khurramafroz"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
