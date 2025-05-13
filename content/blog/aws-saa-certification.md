@@ -6,7 +6,7 @@ draft: false
 tags: ["Tariffs", "AI", "Big Tech", "Geopolitics", "Economics", "Technology Policy", "Systemic Risk"]
 weight: 102
 cover:
-    image: "/images/ftcms_7345b9f7-d7a3-4ec0-b6b4-a74bd1e8f683.avif"
+    image: "/blog/aws-saa-certification/ftcms_7345b9f7-d7a3-4ec0-b6b4-a74bd1e8f683.avif"
 ---
 
 In recent years, three monumental forces have begun to converge in ways that could redefine the global economic and technological landscape: tariffs, artificial intelligence (AI), and Big Tech. Each is powerful in its own right, but together, they form what could be a volatile and destabilizing trio — or, alternatively, a catalyst for structural transformation.
@@ -27,7 +27,7 @@ Tariffs, historically tools of trade protectionism, have morphed into geopolitic
 
 Artificial Intelligence is no longer a curiosity — it is becoming an organizing principle of the next industrial era. The emergence of models like GPT-4, Claude, Gemini, and the rumored “o3” represents a leap toward Artificial General Intelligence (AGI). These models are not merely statistical engines; they exhibit early signs of generalized reasoning, abstraction, and planning — capabilities long considered hallmarks of human intelligence.
 
-![AI Evolution Illustration](/images/20250414070935_AI.jpg)
+![AI Evolution Illustration](/blog/aws-saa-certification/20250414070935_AI.jpg)
 *The accelerating path of artificial intelligence capabilities raises urgent questions around control, cost, and global governance.*
 
 ### Risks and Disruptions:
