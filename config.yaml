@@ -52,7 +52,7 @@ params:
     subtitle: Hi 👋 Khurram here, a tech enthusiast who loves solving complex problems. As a PhD research scholar at IIT Delhi I'm building robust systems to transform the legal experience of Portable USG systems using Deep learning and computer vision. My work is closely supervised by Monika Aggarwal. By evening, you can find me pushing the limits of my strength at the gym. Let's connect and create something awesome together!
 
  
-    imageUrl: "public/home/1000074490.jpg"
+    imageUrl: "/home/1000074490.jpg"
     imageWidth: 220
     imageHeight: 220
     # buttons:
@@ -74,6 +74,8 @@ params:
       url: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFx8TDvcKB7RgAAAZa0oKyY5I2TuK1TcNCLTCUs7l1KlNNHdhM3TRIXhZ5lThmsv5uhATCnnB1yJkykq1jlBwXrBdZZVv96cEJ5fgyyfWVz7xW0WWDNfepkwNMfcF2ToeFMoMQ=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkhurram-afroz-b1b230195%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
     - name: "Researchgate"
       url: "https://www.researchgate.net/profile/Khurram-Afroz"
+      name: "Github"
+      url: "https://github.com/Khurramafroz1"
     - name: "Medium"
       url: "https://medium.com/@khurramafroz"
 
