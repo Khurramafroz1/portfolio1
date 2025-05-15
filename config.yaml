@@ -1,134 +1,145 @@
 baseURL: "https://khurramafroz.netlify.app/"
 languageCode: en-us
-title: Khurram
+title: "Khurram Afroz | AI & Cognitive Futures" # More engaging title
 theme: PaperMod
 
 menu:
   main:
     - identifier: home
-      name: Home
+      name: "Home ✨" # Adding a subtle emoji for flair
       url: /
       weight: 10
     - identifier: blog
-      name: Blog
+      name: "Insights & Articles" # More descriptive than just "Blog"
       url: /blog
       weight: 20
     - identifier: projects
-      name: Projects
+      name: "Research & Projects"
       url: /projects
       weight: 30
     - identifier: experience
-      name: Experience
+      name: "My Journey" # Softer than "Experience"
       url: /experience
       weight: 40
     - identifier: search
-      name: Search
+      name: "Search 🔍"
       url: /search
       weight: 50
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags
-    #   weight: 60
+    - identifier: tags # Definitely useful for a blog
+      name: Tags
+      url: /tags
+      weight: 60
     # - identifier: notes
     #   name: Notes
     #   url: https://notes.arkalim.org
     #   weight: 70
 
 params:
-  # theme
-  showToc: true
-  TocOpen: false
-  ShowBreadCrumbs: true
+  # Theme Customization
+  defaultTheme: auto # Follows OS preference (auto, light, dark)
+  disableThemeToggle: false # Allow users to switch themes
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
   ShowCodeCopyButtons: true
-  hideMeta: false
+  ShowBreadCrumbs: true
+  ShowToc: true
+  TocOpen: false # Keep TOC closed by default, user can open
 
-  # for enchanced SEO
+  # SEO & Meta
   env: production
+  description: "Khurram Afroz's personal site. A deep learning researcher and Ph.D. candidate exploring AI, computational neuroscience, and cognitive modeling." # Site-wide description
+  keywords: ["AI", "Deep Learning", "PhD", "Computational Neuroscience", "Cognitive Modeling", "Khurram Afroz", "Research"]
+  author: "Khurram Afroz"
+  # images: ["/images/site-preview.jpg"] # A general social media preview image for the site
 
-  # Home Page
+  # Home Page - Let's make this more dynamic!
   profileMode:
-    enabled: true
+    enabled: true # Corrected this line
     title: "Khurram Afroz"
-    subtitle: |
-      “Instead of trying to simulate the adult mind, why not start with the child’s?” — Alan Turing
+    # Subtitle should be punchy. The longer bio will go into a separate content section.
+    subtitle: | # Using YAML multiline string for readability
+      AI Researcher & PhD Candidate
+      Exploring the Frontiers of Mind & Machine.
+      Building intelligent systems inspired by the brain.
+    imageUrl: "/home/1000074490.jpg" # Make sure this path is correct relative to your static folder
+    imageTitle: "Khurram Afroz" # Alt text for image
+    imageWidth: 200 # Slightly smaller, can be adjusted
+    imageHeight: 200
+    buttons:
+      - name: "My Research"
+        url: "/projects"
+      - name: "Latest Insights"
+        url: "/blog"
+      - name: "Connect" # Could be a mailto or link to LinkedIn
+        url: "mailto:samarafroz66@gmail.com"
+      # - name: "Resume"
+      #   url: "/resume.pdf" # Example, if you have a resume PDF
 
-      ---
-
-      I’m drawn to a question as ancient as curiosity itself:
-      How do minds — biological or artificial — come to understand the world?
-
-      I’m a deep learning researcher and Ph.D. candidate working at the intersection of computational neuroscience, artificial intelligence, and cognitive modeling. My journey began with machines that learn to see inside the human body — denoising ultrasound signals, segmenting complex anatomy, and enhancing resolution with generative models. But I’ve always been compelled by something deeper:
-
-      What if machines could learn like us — not just to label, but to imagine, reason, and adapt?
-
-      My current work explores the computational foundations of human-like cognition — especially the kinds of internal representations that support learning, generalization, planning, theory of mind, and adaptive behavior. I'm particularly interested in how these representations emerge, how they’re shaped by neuroevolution, and how learning itself might be scaffolded by structures built over millennia of evolutionary pressure.
-
-      In other words: What kinds of brains make learning possible — and how can we build machines that evolve, think, and learn the same way?
-
-      **Cognitive Machines, Inspired by Brains**
-
-      The child who fears thunder, learns to walk, mimics speech, or imagines things unseen — is not just reacting, but computing. I’m fascinated by this elegance: a brain that learns from noisy, partial, ambiguous data… and does so effortlessly.
-
-      This is where computational neuroscience and AI go hand in hand. The brain is not just a metaphor for intelligence — it is a proof that such intelligence is possible, efficient, and resilient. Neuroscience offers more than biological detail; it offers algorithmic insight. Informed by this, I study systems where vision, motion, memory, and decision-making are integrated in ways more human than purely statistical.
-
-      The next generation of AI must do the same.
-
-      That means moving beyond surface-level performance benchmarks toward latent, algorithmic processes — the kind studied in psychology and cognitive science — such as symbolic reasoning, episodic memory, and planning under uncertainty. It means AI that doesn’t just output — but understands.
-
-      **AI’s Open Problems & Why I Care**
-
-      There’s a lot of noise in AI right now, but the signal is clear:
-      Our current systems are powerful — but fragile.
-
-      Injection remains unsolved — making autonomous agents risky in environments where consequences matter.
-
-      Hallucinations persist, and may never be fully eliminated under current paradigms. Triple-9 reliability is a distant dream, especially in regulated fields like medicine or finance.
-
-      And no — RAG doesn’t solve these problems. Not fundamentally.
-
-      That’s why I believe AI needs new foundations. We need to rethink architectures, algorithms, evaluation metrics — even how we organize teams of scientists and engineers. I draw from the early thinkers of computation — Turing, von Neumann, Helmholtz, Craik — who were already wrestling with questions of perception, computation, and intelligence before we had machines powerful enough to test those ideas.
-
-      **What I’m Building**
-
-      In my research, I bridge:
-
-      *   Medical AI, where I build deep models that enhance real-world ultrasound imaging.
-      *   Cognitive modeling, where I study how mental representations arise and support flexible learning.
-      *   Neuroevolution, where I explore how evolution could shape the architectures that scaffold general intelligence.
-
-      I’m not just interested in what works — I’m interested in why it works, and how we can build AI that grows, adapts, and understands, not by mimicking output, but by mimicking the processes of cognition themselves.
-
-      This portfolio is a collection of that exploration — across disciplines, across ideas, and across the vast space between silicon and soul.
-
-      If you're interested in AI that doesn't just compute but cognizes — let's connect. The future isn't just about smarter machines. It's about wiser ones.
-    imageUrl: "/home/1000074490.jpg" # Update this path to your desired visual (e.g., brain-artificial network fusion image)
-    imageWidth: 220
-    imageHeight: 220
-    # buttons:
-    #   - name: Resume
-    #     url: ""
+  # This is where the longer bio from your original subtitle will go.
+  # You'll need to create a _index.md in your `content` folder and put this Markdown there.
+  # PaperMod will render content from `content/_index.md` below the profileMode section.
+  #
+  # Example content for `content/_index.md`:
+  # ---
+  # title: "Welcome" # This title won't show if profileMode is on, but good for structure
+  # layout: "home" # Important for PaperMod
+  # ---
+  #
+  # ## About Me
+  #
+  # I'm a deep learning researcher and Ph.D. candidate chasing a timeless question: how do minds — biological or artificial — come to understand the world?
+  #
+  # My work lives at the crossroads of AI, computational neuroscience, and cognitive modeling. I began in the body, teaching machines to see beneath the skin — denoising ultrasound, segmenting anatomy, restoring lost resolution through generative models. But beyond pixels and labels, I’m drawn to a deeper mystery:
+  #
+  # **What if machines could learn not just to classify — but to think? To imagine, infer, and adapt as humans do?**
+  #
+  # I study the computational roots of cognition — the internal scaffolds of thought that enable generalization, planning, theory of mind, and learning under uncertainty. I'm especially fascinated by how these mental structures arise, evolve, and support flexible intelligence.
+  #
+  # To me, the brain isn’t just a metaphor for AI. It’s a proof of concept. A living demonstration that learning from noisy, partial, ambiguous data isn’t just possible — it’s natural, efficient, and robust.
+  #
+  # Inspired by this, I build systems where perception, memory, and action are no longer siloed modules but intertwined faculties. Systems that don’t just solve problems — they understand why they matter.
+  #
+  # Today's AI can dazzle, but it often crumbles when the world shifts. It predicts without knowing. It speaks without grounding. To truly advance, we must revisit the oldest questions — blending insights from neuroscience, psychology, and the philosophy of mind.
+  #
+  # > If you’re building machines that don’t just compute but cognize — let’s talk.
+  # > The future of AI isn’t just smarter. It’s more human.
 
   # List View
   hideDescriptionInList: false
+  ShowWordCount: true # Nice to have for blog posts
 
-  # cover image for posts
+  # Cover image for posts
   cover:
-    hiddenInList: false # hide on list pages and home
-    hiddenInSingle: false # hide on single page
+    hiddenInList: false
+    hiddenInSingle: false
+    # Default cover image if a post doesn't have one
+    # default: "/images/default-cover.jpg" # Create a generic, cool-looking cover
 
   socialIcons:
     - name: "email"
-      url: "samarafroz66@gmail.com"
+      url: "mailto:samarafroz66@gmail.com" # Corrected mailto
     - name: "linkedin"
-      url: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFx8TDvcKB7RgAAAZa0oKyY5I2TuK1TcNCLTCUs7l1KlNNHdhM3TRIXhZ5lThmsv5uhATCnnB1yJkykq1jlBwXrBdZZVv96cEJ5fgyyfWVz7xW0WWDNfepkwNMfcF2ToeFMoMQ=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkhurram-afroz-b1b230195%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
-    - name: "Researchgate"
-      url: "https://www.researchgate.net/profile/Khurram-Afroz"
-    - name: "Github"
+      url: "https://www.linkedin.com/in/khurram-afroz-b1b230195" # Cleaned URL
+    - name: "github" # Corrected and separated
       url: "https://github.com/Khurramafroz1"
-    - name: "Medium"
+    - name: "researchgate" # Corrected and separated
+      url: "https://www.researchgate.net/profile/Khurram-Afroz"
+    - name: "medium"
       url: "https://medium.com/@khurramafroz"
+    # Add more if you have them:
+    # - name: "twitter"
+    #   url: "https://twitter.com/yourusername"
+    # - name: "googlescholar"
+    #   url: "your_google_scholar_link"
 
-  # text search
+  # Analytics (Optional, but good for tracking)
+  # googleAnalytics: 'G-XXXXXXXXXX' # Your Google Analytics ID
+  # plausibleAnalytics: # If you use Plausible
+  #  domain: "khurramafroz.netlify.app"
+  #  src: "https://plausible.io/js/plausible.js" # Default
+
+  # Text search
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -136,17 +147,41 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+    keys: ["title", "permalink", "summary", "content", "tags"] # Added tags to search
+
+  # Assets for custom styling/JS
+  assets:
+    # Path to your custom favicon
+    favicon: "/favicon.ico" # Place favicon.ico in your static folder
+    favicon16x16: "/favicon-16x16.png" # static/favicon-16x16.png
+    favicon32x32: "/favicon-32x32.png" # static/favicon-32x32.png
+    apple_touch_icon: "/apple-touch-icon.png" # static/apple-touch-icon.png
+    safari_pinned_tab: "/safari-pinned-tab.svg" # static/safari-pinned-tab.svg
+    #
+    # To add custom CSS:
+    # 1. Create a file `assets/css/custom.css` in your Hugo project root.
+    # 2. Add your CSS rules there.
+    # customCSS: ["css/custom.css"] # Uncomment this if you add custom CSS
 
 # for search using Fuse.js
 outputs:
   home:
     - HTML
     - RSS
-    - JSON
+    - JSON # For Fuse.js search
+  section: # Good to have for sections too
+    - HTML
+    - RSS
 
 # allow HTML in MD
 markup:
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: true # Use with caution, but sometimes necessary for embeds
+  highlight:
+    # anchorLineNos: true # Adds anchors to line numbers
+    codeFences: true
+    guessSyntax: true
+    lineNos: true # Show line numbers in code blocks
+    # style: manni # Or any other Chroma style: https://xyproto.github.io/splash/docs/all.html
+    style: dracula # A popular dark theme style for code blocks
