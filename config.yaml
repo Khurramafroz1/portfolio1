@@ -47,12 +47,61 @@ params:
 
   # Home Page
   profileMode:
-    enabled: true@category:debuggers YAML
+    enabled: true
     title: "Khurram Afroz"
-    subtitle: Hi 👋 Khurram here, a tech enthusiast who loves solving complex problems. As a PhD research scholar at IIT Delhi I'm building robust systems to transform the legal experience of Portable USG systems using Deep learning and computer vision. My work is closely supervised by Monika Aggarwal. By evening, you can find me pushing the limits of my strength at the gym. Let's connect and create something awesome together!
+    subtitle: |
+      “Instead of trying to simulate the adult mind, why not start with the child’s?” — Alan Turing
 
- 
-    imageUrl: "/home/1000074490.jpg"
+      ---
+
+      I’m drawn to a question as ancient as curiosity itself:
+      How do minds — biological or artificial — come to understand the world?
+
+      I’m a deep learning researcher and Ph.D. candidate working at the intersection of computational neuroscience, artificial intelligence, and cognitive modeling. My journey began with machines that learn to see inside the human body — denoising ultrasound signals, segmenting complex anatomy, and enhancing resolution with generative models. But I’ve always been compelled by something deeper:
+
+      What if machines could learn like us — not just to label, but to imagine, reason, and adapt?
+
+      My current work explores the computational foundations of human-like cognition — especially the kinds of internal representations that support learning, generalization, planning, theory of mind, and adaptive behavior. I'm particularly interested in how these representations emerge, how they’re shaped by neuroevolution, and how learning itself might be scaffolded by structures built over millennia of evolutionary pressure.
+
+      In other words: What kinds of brains make learning possible — and how can we build machines that evolve, think, and learn the same way?
+
+      **Cognitive Machines, Inspired by Brains**
+
+      The child who fears thunder, learns to walk, mimics speech, or imagines things unseen — is not just reacting, but computing. I’m fascinated by this elegance: a brain that learns from noisy, partial, ambiguous data… and does so effortlessly.
+
+      This is where computational neuroscience and AI go hand in hand. The brain is not just a metaphor for intelligence — it is a proof that such intelligence is possible, efficient, and resilient. Neuroscience offers more than biological detail; it offers algorithmic insight. Informed by this, I study systems where vision, motion, memory, and decision-making are integrated in ways more human than purely statistical.
+
+      The next generation of AI must do the same.
+
+      That means moving beyond surface-level performance benchmarks toward latent, algorithmic processes — the kind studied in psychology and cognitive science — such as symbolic reasoning, episodic memory, and planning under uncertainty. It means AI that doesn’t just output — but understands.
+
+      **AI’s Open Problems & Why I Care**
+
+      There’s a lot of noise in AI right now, but the signal is clear:
+      Our current systems are powerful — but fragile.
+
+      Injection remains unsolved — making autonomous agents risky in environments where consequences matter.
+
+      Hallucinations persist, and may never be fully eliminated under current paradigms. Triple-9 reliability is a distant dream, especially in regulated fields like medicine or finance.
+
+      And no — RAG doesn’t solve these problems. Not fundamentally.
+
+      That’s why I believe AI needs new foundations. We need to rethink architectures, algorithms, evaluation metrics — even how we organize teams of scientists and engineers. I draw from the early thinkers of computation — Turing, von Neumann, Helmholtz, Craik — who were already wrestling with questions of perception, computation, and intelligence before we had machines powerful enough to test those ideas.
+
+      **What I’m Building**
+
+      In my research, I bridge:
+
+      *   Medical AI, where I build deep models that enhance real-world ultrasound imaging.
+      *   Cognitive modeling, where I study how mental representations arise and support flexible learning.
+      *   Neuroevolution, where I explore how evolution could shape the architectures that scaffold general intelligence.
+
+      I’m not just interested in what works — I’m interested in why it works, and how we can build AI that grows, adapts, and understands, not by mimicking output, but by mimicking the processes of cognition themselves.
+
+      This portfolio is a collection of that exploration — across disciplines, across ideas, and across the vast space between silicon and soul.
+
+      If you're interested in AI that doesn't just compute but cognizes — let's connect. The future isn't just about smarter machines. It's about wiser ones.
+    imageUrl: "/home/1000074490.jpg" # Update this path to your desired visual (e.g., brain-artificial network fusion image)
     imageWidth: 220
     imageHeight: 220
     # buttons:
@@ -74,7 +123,7 @@ params:
       url: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFx8TDvcKB7RgAAAZa0oKyY5I2TuK1TcNCLTCUs7l1KlNNHdhM3TRIXhZ5lThmsv5uhATCnnB1yJkykq1jlBwXrBdZZVv96cEJ5fgyyfWVz7xW0WWDNfepkwNMfcF2ToeFMoMQ=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkhurram-afroz-b1b230195%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
     - name: "Researchgate"
       url: "https://www.researchgate.net/profile/Khurram-Afroz"
-      name: "Github"
+    - name: "Github"
       url: "https://github.com/Khurramafroz1"
     - name: "Medium"
       url: "https://medium.com/@khurramafroz"
