@@ -161,7 +161,7 @@ params:
     # To add custom CSS:
     # 1. Create a file `assets/css/custom.css` in your Hugo project root.
     # 2. Add your CSS rules there.
-    # customCSS: ["css/custom.css"] # Uncomment this if you add custom CSS
+    customCSS: ["css/custom.css"] # Uncomment this if you add custom CSS
 
 # for search using Fuse.js
 outputs:
