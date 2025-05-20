@@ -1,0 +1,50 @@
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        {{- $img := resources.Get .imageUrl }}
+        {{- if $img }}
+            {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+            {{- if hugo.IsExtended -}}
+                {{- $processableFormats = $processableFormats | append "webp" -}}
+            {{- end -}}
+            {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+            {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
+                    {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+                {{- else if .imageHeight }}
+                    {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+                {{ else if .imageWidth }}
+                    {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+                {{ else }}
+                    {{- $img = $img.Resize "150x150" }}
+                {{- end }}
+            {{- end }}
+            <img src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" 
+                data-aos="fade-down" data-aos-duration="800" />
+        {{- else }}
+        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" 
+            data-aos="fade-down" data-aos-duration="800" />
+        {{- end }}
+        {{- end }}
+        <h1 data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">{{ .title | default site.Title | markdownify }}</h1>
+        <span data-aos="fade-down" data-aos-delay="400" data-aos-duration="800">{{ .subtitle | markdownify }}</span>
+        
+        {{- $socialIconsParams := dict "socialIconsList" site.Params.socialIcons "dataAos" "fade-up" "dataAosDelayBase" 600 }}
+        {{- partial "social_icons.html" $socialIconsParams -}}
+
+        {{- with .buttons }}
+        <div class="buttons" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+            {{- range $index, $element := . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}" 
+               data-aos="fade-up" data-aos-delay="{{ add 700 (mul $index 150) }}" data-aos-duration="600">
+                <span class="button-inner">{{ .name }}</span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>
