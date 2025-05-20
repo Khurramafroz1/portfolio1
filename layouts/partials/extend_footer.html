@@ -15,3 +15,47 @@
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   });
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const parallaxImages = document.querySelectorAll('.parallax-image');
+    // Adjust parallaxSpeed: 0.1 (subtle) to 0.5 (more pronounced).
+    // A value around 0.2-0.3 often looks good.
+    const parallaxSpeed = 0.25; 
+
+    function updateParallax() {
+        parallaxImages.forEach(image => {
+            const container = image.closest('.parallax-container');
+            if (!container) return;
+
+            const rect = container.getBoundingClientRect();
+            
+            // Only animate if the container is somewhat in view to save resources
+            if (rect.bottom < 0 || rect.top > window.innerHeight) {
+                // Optional: Reset transform if you want it to snap back when out of view
+                // image.style.transform = `translateY(0px)`; 
+                return;
+            }
+
+            // Calculate the translateY value.
+            // When rect.top is 0 (container top at viewport top), translateY is 0. Image is at its CSS default 'top: -25%'.
+            // As container scrolls up (rect.top becomes negative), image moves down (positive translateY).
+            // As container scrolls down (rect.top becomes positive), image moves up (negative translateY).
+            const translateY = -rect.top * parallaxSpeed;
+            
+            image.style.transform = `translateY(${translateY}px)`;
+        });
+    }
+
+    // Use a flag to ensure event listener is added only once if DOMContentLoaded fires multiple times (unlikely but safe)
+    if (!window.parallaxScrollListenerAdded) {
+        window.addEventListener('scroll', function() {
+            window.requestAnimationFrame(updateParallax);
+        }, { passive: true });
+        window.parallaxScrollListenerAdded = true;
+    }
+
+    // Initial call to set positions correctly on page load
+    updateParallax();
+});
+</script>
