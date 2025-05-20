@@ -3,6 +3,8 @@ title: "Welcome" # This title won't show if profileMode is on, but good for stru
 layout: "home" # Important for PaperMod
 ---
 
+<div data-aos="fade-up" data-aos-delay="100">
+
 ## About Me
 
 I'm a deep learning researcher and Ph.D. candidate chasing a timeless question: how do minds — biological or artificial — come to understand the world?
@@ -21,3 +23,5 @@ Today's AI can dazzle, but it often crumbles when the world shifts. It predicts 
 
 > If you’re building machines that don’t just compute but cognize — let’s talk.
 > The future of AI isn’t just smarter. It’s more human.
+
+</div>
