@@ -1,6 +1,6 @@
 baseURL: "https://khurramafroz.netlify.app/"
 languageCode: en-us
-title: "Khurram Afroz | AI & Cognitive Futures" # More engaging title
+title: "Khurram Afroz" # More engaging title
 theme: PaperMod
 
 menu:
