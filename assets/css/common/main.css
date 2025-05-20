@@ -5,23 +5,42 @@
     margin: auto;
     padding: var(--gap);
     padding-top: calc(var(--header-height) + var(--gap));
+    animation: fadeIn 0.6s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .page-header h1 {
     font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.8em;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .pagination {
     display: flex;
+    margin: 2rem 0;
 }
 
 .pagination a {
     color: var(--theme);
-    font-size: 13px;
-    line-height: 36px;
+    font-size: 14px;
+    line-height: 38px;
     background: var(--primary);
-    border-radius: calc(36px / 2);
-    padding: 0 16px;
+    border-radius: 24px;
+    padding: 0 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .pagination .next {
@@ -29,23 +48,119 @@
 }
 
 .social-icons {
-    padding: 12px 0;
+    padding: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
-.social-icons a:not(:last-of-type) {
-    margin-inline-end: 12px;
+.social-icons a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px) scale(1.05);
+    opacity: 1;
 }
 
 .social-icons a svg {
-    height: 26px;
-    width: 26px;
+    height: 28px;
+    width: 28px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 code {
     direction: ltr;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 0.9em;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    background: var(--code-bg);
+    transition: background 0.3s ease;
 }
 
-div.highlight,
+div.highlight {
+    position: relative;
+    border-radius: 8px;
+    margin: 1.5em 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Improve responsiveness */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 32px;
+    }
+    
+    .main {
+        padding: calc(var(--gap) / 1.5);
+        padding-top: calc(var(--header-height) + var(--gap) / 1.5);
+    }
+}
+
+/* Enhance scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
+
+/* Add card hover effects */
+.post-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Improve buttons */
+button, .button {
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+button:hover, .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add focus styles for accessibility */
+a:focus, button:focus, input:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Improve images */
+img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.entry-cover img:hover {
+    transform: scale(1.02);
+}
+
+
 pre {
     position: relative;
 }
