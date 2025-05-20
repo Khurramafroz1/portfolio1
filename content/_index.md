@@ -22,6 +22,6 @@ Inspired by this, I build systems where perception, memory, and action are no lo
 Today's AI can dazzle, but it often crumbles when the world shifts. It predicts without knowing. It speaks without grounding. To truly advance, we must revisit the oldest questions — blending insights from neuroscience, psychology, and the philosophy of mind.
 
 > If you’re building machines that don’t just compute but cognize — let’s talk.
-> The future of AI isn’t just smarter. It’s more human.
+> The future of AI isn’t just smarter. It’s more inspiring from human.
 
 </div>
