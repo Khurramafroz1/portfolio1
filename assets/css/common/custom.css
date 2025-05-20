@@ -22,6 +22,19 @@
     --content-gap-sm: 15px;
     --content-gap-md: 30px;
     --content-gap-lg: 60px;
+
+    /* Glassmorphism Variables - Light Mode */
+    --glass-bg-light: rgba(255, 255, 255, 0.65); /* Semi-transparent white */
+    --glass-border-light: rgba(255, 255, 255, 0.3);
+    --glass-shadow-light: 0 8px 32px 0 rgba(31, 38, 135, 0.1); /* Subtle shadow */
+    --glass-blur: 10px;
+}
+
+[data-theme="dark"] {
+    /* Glassmorphism Variables - Dark Mode */
+    --glass-bg-dark: rgba(40, 40, 40, 0.65);
+    --glass-border-dark: rgba(60, 60, 60, 0.3);
+    --glass-shadow-dark: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Modern card hover effects */
@@ -206,6 +219,55 @@ pre code {
 }
 
 /* Enhance accessibility */
+
+/* Glassmorphism Effect for Post Entries */
+.post-entry,
+.first-entry {
+    /* Light Mode Defaults */
+    background: var(--glass-bg-light);
+    border: 1px solid var(--glass-border-light);
+    box-shadow: var(--glass-shadow-light);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur)); /* Safari */
+    border-radius: var(--radius-lg); /* Using a larger radius for a softer glass look */
+    transition: all 0.4s ease; /* Slightly longer transition for the glass effect */
+}
+
+[data-theme="dark"] .post-entry,
+[data-theme="dark"] .first-entry {
+    background: var(--glass-bg-dark);
+    border: 1px solid var(--glass-border-dark);
+    box-shadow: var(--glass-shadow-dark);
+}
+
+/* Adjust hover effects to complement glassmorphism */
+.post-entry:hover,
+.first-entry:hover {
+    /* Light Mode Hover */
+    background: rgba(255, 255, 255, 0.75); /* Slightly less transparent on hover */
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15);
+    transform: translateY(-6px) scale(1.01); /* More pronounced hover effect */
+}
+
+[data-theme="dark"] .post-entry:hover,
+[data-theme="dark"] .first-entry:hover {
+    background: rgba(50, 50, 50, 0.75); /* Slightly less transparent on hover for dark */
+    border-color: rgba(70, 70, 70, 0.5);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Ensure text readability on glass background */
+.post-entry .entry-header h2,
+.first-entry .entry-header h1,
+.post-entry .entry-content,
+.first-entry .entry-content,
+.post-entry .entry-footer,
+.first-entry .entry-footer {
+    position: relative; /* Ensures text is above the blurred background */
+    z-index: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
