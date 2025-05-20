@@ -3,6 +3,9 @@ title: "Welcome" # This title won't show if profileMode is on, but good for stru
 layout: "home" # Important for PaperMod
 ---
 
+
+## Welcome!
+
 <div data-aos="fade-up" data-aos-delay="100">
 
 ## About Me
@@ -22,6 +25,7 @@ Inspired by this, I build systems where perception, memory, and action are no lo
 Today's AI can dazzle, but it often crumbles when the world shifts. It predicts without knowing. It speaks without grounding. To truly advance, we must revisit the oldest questions — blending insights from neuroscience, psychology, and the philosophy of mind.
 
 > If you’re building machines that don’t just compute but cognize — let’s talk.
-> The future of AI isn’t just smarter. It’s more inspiring from human.
+> The future of AI isn’t just smarter. It’s more human.
 
 </div>
+
