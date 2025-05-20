@@ -1,0 +1,14 @@
+{{- $data_aos_type := .dataAos | default "fade-up" -}}
+{{- $delay_base := .dataAosDelayBase | default 0 -}}
+{{- $delay_increment := 100 -}} {{/* Delay increment for each icon */}}
+
+<div class="social-icons">
+    {{- range $index, $element := .socialIconsList }} {{/* Changed .context to .socialIconsList for clarity */}}
+    <a href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me" title="{{ .name | title }}"
+       data-aos="{{ $data_aos_type }}" 
+       data-aos-delay="{{ add $delay_base (mul $index $delay_increment) }}"
+       data-aos-duration="600">
+        {{- partial "svg.html" . -}}
+    </a>
+    {{- end }}
+</div>
